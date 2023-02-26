@@ -1,0 +1,8 @@
+name: BlockBreakStatFixer
+version: '${project.version}'
+main: saber.blockbreakstatfixer.BlockBreakStatFixer
+api-version: 1.19
+depend: [ mcMMO ]
+authors: [ Saber ]
+description: Spigot plugin that uses McMMO's place store to stop recently placed blocks from counting towards statistics
+website: https://github.com/SaberSupe
