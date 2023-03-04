@@ -17,7 +17,7 @@ public class BlockBreakStatFixEvent implements Listener {
 
     @EventHandler
     public void onBlockBreak(BlockBreakEvent e){
-        if (mcmmoStore.isTrue(e.getBlock())){
+        if (mcmmoStore.isTrue(e.getBlock()) && e.getPlayer().getStatistic(Statistic.MINE_BLOCK, e.getBlock().getType()) > 0){
             e.getPlayer().decrementStatistic(Statistic.MINE_BLOCK, e.getBlock().getType());
         }
     }
